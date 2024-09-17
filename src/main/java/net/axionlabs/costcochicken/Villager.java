@@ -1,8 +1,8 @@
-package net.axionlabs.costcochicken;
+package net.axionlabs.Villager;
 
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
-import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.axionlabs.items;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.EnchantedBookItem;
@@ -21,4 +21,6 @@ public class Villager {
                             6, 5, 0.05f));
                 });
     }
+    public static final String MOD_ID = "costco";
+
 }

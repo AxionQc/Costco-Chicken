@@ -1,4 +1,4 @@
-package net.axionlabs.Items;
+package net.axionlabs.items;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -9,7 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Items{
+public class items{
     // Create the item.
     public static final Item COSTCO_CHICKEN = new Item(new Item.Settings().food(new FoodComponent.Builder().nutrition(17).saturationModifier(1f).build()));
 
