@@ -1,4 +1,4 @@
-package net.axionlabs.costcochicken;
+package net.axionlabs.Items;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -9,7 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class CostcoRotisserieChicken implements ModInitializer {
+public class Items{
     // Create the item.
     public static final Item COSTCO_CHICKEN = new Item(new Item.Settings().food(new FoodComponent.Builder().nutrition(17).saturationModifier(1f).build()));
 
@@ -26,11 +26,4 @@ public class CostcoRotisserieChicken implements ModInitializer {
 
     public static final String MOD_ID = "costco";
 
-    @Override
-    public void onInitialize() {
-        // Register the item.
-        register(COSTCO_CHICKEN, "costco_chicken");
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
-                .register((itemGroup) -> itemGroup.add(CostcoRotisserieChicken.COSTCO_CHICKEN));
-    }
 }
