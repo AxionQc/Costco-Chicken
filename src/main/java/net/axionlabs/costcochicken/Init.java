@@ -1,31 +1,27 @@
-package net.axionlabs.init;
+package net.axionlabs.costcochicken.Init;
 
-import net.axionlabs.items;
-import net.axionlabs.villager;
+import net.axionlabs.costcochicken.Items; // Corrected import statement
+import net.axionlabs.costcochicken.Villager; // Corrected import statement
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.component.type.FoodComponent;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class init implements ModInitializer {
+public class Init implements ModInitializer {
 
     @Override
-	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
+    public void onInitialize() {
+        ModItemGroups.registerItemGroups();
 
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
+        ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
         ModLootTableModifiers.modifyLootTables();
-        ModCustomTrades.registerCustomTrades();
+        Villager.registerCustomTrades(); // Corrected method call
 
         register(COSTCO_CHICKEN, "costco_chicken");
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register((itemGroup) -> itemGroup.add(CostcoRotisserieChicken.COSTCO_CHICKEN));
-
     }
 }
