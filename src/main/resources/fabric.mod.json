@@ -9,11 +9,11 @@
     "repo": "https://github.com/Carbon-Axion/Costco Rotisserie Chicken"
   },
   "license": "All-Rights-Reserved",
-  "icon": "assets/costco_rotisserie_chicken/icon.png",
+  "icon": "assets/costco/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.axionlabs.costcochicken.CostcoRotisserieChicken"
+      "net.axionlabs.costco.Init"
     ]
   },
   "depends": {
