@@ -1,1 +1,1 @@
-A mod that adds the Costco Rotisseiry Chicken, not much else
+A mod that adds the Costco Rotisserie Chicken, not much else
